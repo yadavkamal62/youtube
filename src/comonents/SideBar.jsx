@@ -3,7 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 import { SiYoutubeshorts } from "react-icons/si";
 import { MdSubscriptions } from "react-icons/md";
 import { useSelector } from 'react-redux';
-import store from "../utils/store"
+import { Link } from 'react-router-dom';
 
 
 const SideBar = () => {
@@ -13,10 +13,10 @@ const SideBar = () => {
   return (
     <div className='px-3 w-56 h-screen bg-white'>
       {/* Home */}
-      <div className='flex items-center gap-4 px-3 my-2 cursor-pointer bg-gray-100 hover:bg-gray-200 w-full rounded-lg h-10 transition-colors'>
+      <Link to="/" className='flex items-center gap-4 px-3 my-2 cursor-pointer bg-gray-100 hover:bg-gray-200 w-full rounded-lg h-10 transition-colors text-inherit no-underline'>
         <AiFillHome className='text-xl shrink-0' />
         <h1 className='font-bold text-sm whitespace-nowrap'>Home</h1>
-      </div>
+      </Link>
 
       {/* Shorts */}
       <div className='flex items-center gap-4 px-3 my-2 cursor-pointer hover:bg-gray-100 w-full rounded-lg h-10 transition-colors'>
