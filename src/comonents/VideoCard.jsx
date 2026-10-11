@@ -1,7 +1,9 @@
 import React from 'react'
 
+
 const VideoCard = ({ info }) => {
     if (!info) return null;
+  
 
     console.log(info)
     const {snippet,statistics} = info;
